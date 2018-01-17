@@ -21,11 +21,18 @@ section {
   max-width: 1300px;
 }
 
-hr .tiny {
-  /* short hrs... duh */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-
+.title_token {
+  background-color: #363636;
+  color: #fff;
+  height: 50px;
+  width: 150px;
+  text-align: center;
+}
 
 
 /* HERO STYLES */
@@ -88,7 +95,7 @@ hr .tiny {
   height: auto;
 }
 
-#copyright {
+#tag_line {
   margin-top: -50px;
   margin-left: 50px;
   color: grey;
@@ -102,29 +109,46 @@ hr .tiny {
   margin: 150px auto;
 }
 
-#lineup_token {
-  background-color: #363636;
-  color: #fff;
-  height: 50px;
-  width: 150px;
-  text-align: center;
-
-
-}
-
-/* 4h3w */
-.lineup {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.speaker {
+.tile {
   margin: 20px 10px;
   flex-basis: 30%;
+  height: 350px;
+  width: 350px;
 }
 
-.speaker > img {
-  background-color: black;
-  height: 230px;
-  width: 350px;
+.tile > img {
+  background-color: #9ca0b4;
+  width: 100%;
+}
+
+
+/* RECAP STYLES */
+.recap {
+  background-color: #fafafa;
+}
+
+
+/* HOSTS STYLES */
+.hosts {
+  background-color: #d6dcdf;
+  min-height: 675px;
+  width: 100%;
+}
+
+
+
+
+/* FOOTER STYLES */
+.footer {
+  background-color: #363636;
+  min-height: 400px;
+  width: 100%;
+}
+
+#copyright {
+  color: #d6dcdf;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
 }
