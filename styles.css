@@ -130,12 +130,18 @@ section {
 
 /* HOSTS STYLES */
 .hosts {
+  background-image: url(assets/hosts_vector.svg);
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: #d6dcdf;
   min-height: 675px;
   width: 100%;
 }
 
+#hosts_vector {
+  justify-content: center;
 
+}
 
 
 /* FOOTER STYLES */
@@ -151,4 +157,29 @@ section {
   align-items: center;
   text-align: center;
 
+}
+
+
+
+
+
+
+/* SIGNUP STYLES */
+.signup {
+
+}
+
+.signup object {
+  margin: 50px auto;
+}
+
+.signup .area {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.signup .area form {
+  display: flex;
+  flex-direction: column;
 }
