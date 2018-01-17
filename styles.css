@@ -115,6 +115,16 @@ hr .tiny {
 /* 4h3w */
 .lineup {
   display: flex;
-  flex-flow: wrap;
+  flex-wrap: wrap;
+}
 
+.speaker {
+  margin: 20px 10px;
+  flex-basis: 30%;
+}
+
+.speaker > img {
+  background-color: black;
+  height: 230px;
+  width: 350px;
 }
