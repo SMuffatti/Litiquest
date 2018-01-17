@@ -1,0 +1,120 @@
+/* GENERAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input, button, submit {
+  border:none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Ruda', sans-serif;
+  background-color: #fff;
+}
+
+section {
+  max-width: 1300px;
+}
+
+hr .tiny {
+  /* short hrs... duh */
+}
+
+
+
+
+/* HERO STYLES */
+.hero {
+  height: 100vh;
+}
+
+.hero header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+#save {
+  padding: 10px 35px;
+  border: 2px solid #ec4639;
+  border-radius: 35px;
+  font-weight: 900;
+
+  background-color: #fff;
+}
+
+#video_placeholder {
+  justify-content: center;
+  height: 625px;
+  width: 1100px;
+}
+
+.hero .thanks {
+  flex-direction: column;
+  width: 550px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0 auto;
+}
+
+.hero .thanks h2 {
+  font-size: 4em;
+  font-weight: 700;
+}
+
+.hero .thanks p {
+  margin: 20px 0;
+}
+
+#flickr {
+  font-size: 16px;
+}
+
+
+/* SLIDER SYTLES */
+.slider {
+  background-color: #fc433f;
+}
+
+.slider img {
+  max-width: 1300px;
+  height: auto;
+}
+
+#copyright {
+  margin-top: -50px;
+  margin-left: 50px;
+  color: grey;
+}
+
+
+
+/* WHAT IS LITIQUEST SYTLES */
+
+.what {
+  margin: 150px auto;
+}
+
+#lineup_token {
+  background-color: #363636;
+  color: #fff;
+  height: 50px;
+  width: 150px;
+  text-align: center;
+
+
+}
+
+/* 4h3w */
+.lineup {
+  display: flex;
+  flex-flow: wrap;
+
+}
