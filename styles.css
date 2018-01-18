@@ -7,68 +7,127 @@
 
 input, button, submit {
   border:none;
+  text-decoration: none;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
   font-family: 'Ruda', sans-serif;
   background-color: #fff;
 }
 
+.container {
+  position: relative;
+  padding: 0;
+  border: 1px dotted pink;
+}
+
 section {
-  max-width: 1300px;
-}
-
-.grid {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
-.title_token {
-  background-color: #363636;
-  color: #fff;
-  height: 50px;
-  width: 150px;
-  text-align: center;
+
+
+/* VECTOR STYLES */
+.vector {
+  position: absolute;
+  z-index: -1;
 }
+
+#red_hero_left {
+  top: 16%;
+  left: -5%
+}
+
+#red_hero_right {
+  top: 7%;
+  right: -5%;
+}
+
+#circle_outline {
+  top: 7%;
+  right: -5%;
+  z-index: 2;
+}
+
+#grey_hero_p {
+  top: 12%;
+  left: -5%;
+  z-index: -2;
+}
+
+#grey_hero_top {
+  left: -5%;
+}
+
+#what_grey {
+  top: 39%;
+  right: -5%;
+}
+
+#lineup_grey {
+  top: 47%;
+  left: -5%;
+}
+
+#hosts_grey {
+  top:83%;
+  left: 6%;
+  z-index: 0;
+}
+
+
+
+
+
+
 
 
 /* HERO STYLES */
 .hero {
-  height: 100vh;
+  min-height: 100vh;
 }
 
-.hero header {
+header {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   margin: 40px 0;
 }
 
-#save {
+
+#save_btn {
   padding: 10px 35px;
   border: 2px solid #ec4639;
   border-radius: 35px;
   font-weight: 900;
-
   background-color: #fff;
+  color: #000;
+  -webkit-transition: all .5s  ease-out;
+  -moz-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+#save_btn:hover {
+  text-decoration: none;
+  background-color: #ec4639;
+  color: #fff;
 }
 
 #video_placeholder {
-  justify-content: center;
-  height: 625px;
-  width: 1100px;
+  background-color: #9ca0b4;
+  max-height: 625px;
+  width: 100%;
 }
 
 .hero .thanks {
-  flex-direction: column;
   width: 550px;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 24px;
-  margin: 0 auto;
+  margin: 50px auto;
+  margin-bottom: 100px;
 }
 
 .hero .thanks h2 {
@@ -91,34 +150,80 @@ section {
 }
 
 .slider img {
-  max-width: 1300px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 110%;
   height: auto;
 }
 
 #tag_line {
   margin-top: -50px;
   margin-left: 50px;
-  color: grey;
+  color: #9c9fb4;
 }
 
 
 
 /* WHAT IS LITIQUEST SYTLES */
-
 .what {
-  margin: 150px auto;
+  width: 80%;
+  margin: 150px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.what h2 {
+  font-size: 4em;
+  font-weight: 700;
+}
+
+.facts {
+  display: flex;
+  flex-direction: row;
+  color: #9c9fb4;
+}
+
+.facts > p {
+  margin-right: 15px;
+  width: 50%;
+}
+
+
+/* PEOPLE TILE STYLES*/
+
+.title_token {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  background-color: #363636;
+  color: #fff;
+  height: 50px;
+  width: 150px;
+  margin-top: 75px;
+  margin-bottom: 25px;
 }
 
 .tile {
-  margin: 20px 10px;
-  flex-basis: 30%;
-  height: 350px;
-  width: 350px;
+  margin-bottom: 50px;
 }
 
 .tile > img {
   background-color: #9ca0b4;
   width: 100%;
+}
+
+.tile > h4 {
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+.tile > p {
+  color: #9c9fb4;
+  font-size: 18px;
 }
 
 
@@ -135,12 +240,19 @@ section {
   background-position: center;
   background-color: #d6dcdf;
   min-height: 675px;
-  width: 100%;
+  width: 110%;
+  
 }
 
-#hosts_vector {
-  justify-content: center;
 
+.hosts > div {
+  z-index: 1;
+}
+
+.host-logos {
+  display: flex;
+  justify-content: space-around;
+  margin: 120px auto;
 }
 
 
