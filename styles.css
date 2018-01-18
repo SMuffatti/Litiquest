@@ -66,17 +66,18 @@ section {
   right: -5%;
 }
 
-
-
-
-
-.title_token {
-  background-color: #363636;
-  color: #fff;
-  height: 50px;
-  width: 150px;
-  text-align: center;
+#lineup_grey {
+  top: 47%;
+  left: -5%;
 }
+
+#hosts_grey {
+  top:83%;
+  left: 6%;
+  z-index: 0;
+}
+
+
 
 
 
@@ -165,10 +166,6 @@ header {
 
 
 /* WHAT IS LITIQUEST SYTLES */
-.what_sec {
-  margin-bottom: 75px;
-}
-
 .what {
   width: 80%;
   margin: 150px 0;
@@ -196,9 +193,37 @@ header {
 
 /* PEOPLE TILE STYLES*/
 
+.title_token {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  background-color: #363636;
+  color: #fff;
+  height: 50px;
+  width: 150px;
+  margin-top: 75px;
+  margin-bottom: 25px;
+}
+
+.tile {
+  margin-bottom: 50px;
+}
+
 .tile > img {
   background-color: #9ca0b4;
   width: 100%;
+}
+
+.tile > h4 {
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+.tile > p {
+  color: #9c9fb4;
+  font-size: 18px;
 }
 
 
@@ -212,9 +237,19 @@ header {
 .hosts {
   background-color: #d6dcdf;
   min-height: 675px;
-  width: 100%;
+  width: 110%;
+  
 }
 
+.hosts > div {
+  z-index: 1;
+}
+
+.host-logos {
+  display: flex;
+  justify-content: space-around;
+  margin: 120px auto;
+}
 
 /* FOOTER STYLES */
 .footer {
