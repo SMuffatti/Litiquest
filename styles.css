@@ -37,34 +37,38 @@ section {
 
 #red_hero_left {
   top: 16%;
+  left: -5%
 }
 
 #red_hero_right {
   top: 7%;
-  right: -8%;
+  right: -5%;
 }
 
 #circle_outline {
   top: 7%;
-  right: -8%;
+  right: -5%;
   z-index: 2;
 }
 
 #grey_hero_p {
   top: 12%;
+  left: -5%;
   z-index: -2;
 }
 
 #grey_hero_top {
-  left: -8%;
+  left: -5%;
+}
+
+#what_grey {
+  top: 39%;
+  right: -5%;
 }
 
 
 
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 
 .title_token {
   background-color: #363636;
@@ -98,6 +102,10 @@ header {
   font-weight: 900;
   background-color: #fff;
   color: #000;
+  -webkit-transition: all .5s  ease-out;
+  -moz-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  transition: all .5s ease-out;
 }
 
 #save_btn:hover {
@@ -105,10 +113,6 @@ header {
   background-color: #ec4639;
   color: #fff;
 }
-
-
-
-
 
 #video_placeholder {
   background-color: #9ca0b4;
@@ -145,30 +149,52 @@ header {
 }
 
 .slider img {
-  max-width: 1300px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 110%;
   height: auto;
 }
 
 #tag_line {
   margin-top: -50px;
   margin-left: 50px;
-  color: grey;
+  color: #9c9fb4;
 }
 
 
 
 /* WHAT IS LITIQUEST SYTLES */
+.what_sec {
+  margin-bottom: 75px;
+}
 
 .what {
-  margin: 150px auto;
+  width: 80%;
+  margin: 150px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
 }
 
-.tile {
-  margin: 20px 10px;
-  flex-basis: 30%;
-  height: 350px;
-  width: 350px;
+.what h2 {
+  font-size: 4em;
+  font-weight: 700;
 }
+
+.facts {
+  display: flex;
+  flex-direction: row;
+  color: #9c9fb4;
+}
+
+.facts > p {
+  margin-right: 15px;
+  width: 50%;
+}
+
+
+/* PEOPLE TILE STYLES*/
 
 .tile > img {
   background-color: #9ca0b4;
@@ -188,8 +214,6 @@ header {
   min-height: 675px;
   width: 100%;
 }
-
-
 
 
 /* FOOTER STYLES */
