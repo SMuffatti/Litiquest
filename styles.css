@@ -21,6 +21,11 @@ body {
   border: 1px dotted pink;
 }
 
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
 section {
   display: flex;
   flex-direction: column;
@@ -30,8 +35,11 @@ section {
 
 /* VECTOR STYLES */
 .vector {
+  display: block;
   position: absolute;
   z-index: -1;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 #red_hero_left {
@@ -71,8 +79,8 @@ section {
 }
 
 #hosts_grey {
-  top:83%;
-  left: 6%;
+  top:416.5%;
+  left: 32%;
   z-index: 0;
 }
 
@@ -228,22 +236,17 @@ section {
 
 
 /* RECAP STYLES */
-.recap {
+.recap-back {
   background-color: #fafafa;
 }
 
 
 /* HOSTS STYLES */
-.hosts {
-  background-image: url(assets/hosts_vector.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+.hosts-back {
   background-color: #d6dcdf;
   min-height: 675px;
-  width: 110%;
-
+  width: 100%;
 }
-
 
 .hosts > div {
   z-index: 1;
@@ -270,4 +273,5 @@ section {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 60px auto;
 }
