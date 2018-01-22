@@ -258,7 +258,7 @@ section {
 
 /* FOOTER STYLES */
 .footer {
-  position: absolute;
+  display: flex;
   bottom: 0;
   background-color: #363636;
   min-height: 400px;
