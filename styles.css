@@ -11,7 +11,6 @@ input, button, submit {
 }
 
 body {
-
   font-family: 'Ruda', sans-serif;
   background-color: #fff;
 }
@@ -58,7 +57,7 @@ section {
 }
 
 #grey_hero_top {
-  left: -5%;
+  top: -5%;
 }
 
 #what_grey {
@@ -89,7 +88,7 @@ section {
   min-height: 100vh;
 }
 
-header {
+.header {
   display: flex;
   flex-direction: row;
   margin: 40px 0;
@@ -97,6 +96,7 @@ header {
 
 
 #save_btn {
+  width: 175px;
   padding: 10px 35px;
   border: 2px solid #ec4639;
   border-radius: 35px;
@@ -241,7 +241,7 @@ header {
   background-color: #d6dcdf;
   min-height: 675px;
   width: 110%;
-  
+
 }
 
 
@@ -258,6 +258,8 @@ header {
 
 /* FOOTER STYLES */
 .footer {
+  position: absolute;
+  bottom: 0;
   background-color: #363636;
   min-height: 400px;
   width: 100%;
@@ -268,30 +270,4 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-
-}
-
-
-
-
-
-
-/* SIGNUP STYLES */
-.signup {
-
-}
-
-.signup object {
-  margin: 50px auto;
-}
-
-.signup .area {
-  display: flex;
-  flex-direction: row;
-
-}
-
-.signup .area form {
-  display: flex;
-  flex-direction: column;
 }

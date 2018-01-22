@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ruda', sans-serif;
+  background-color: #fff;
+}
+
+.container {
+  position: relative;
+  padding: 0;
+  border: 1px dotted pink;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* VECTOR STYLES */
+.vector {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#red_signup {
+  top: 27%;
+  left: -5%;
+}
+
+#grey_signup {
+  top: 22%;
+  right: -5%;
+}
+
+
+/* SIGNUP STYLES */
+.signup {
+  min-height: 100vh;
+}
+
+#logo {
+  display: block;
+  margin: 50px auto;
+  margin-bottom: 100px;
+}
+
+#save {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.signup .form-control   {
+  margin-bottom: 20px;
+  width: 85%;
+}
+
+#submit_btn {
+  width: 175px;
+  padding: 10px 35px;
+  margin-top: 35px;
+  border: 2px solid #ec4639;
+  border-radius: 35px;
+  font-weight: 900;
+  background-color: #fff;
+  color: #000;
+  -webkit-transition: all .5s  ease-out;
+  -moz-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+#submit_btn:hover {
+  text-decoration: none;
+  background-color: #ec4639;
+  color: #fff;
+}
+
+/* REGISTRATION STYLES */
+h2 {
+  font-size: 4em;
+  font-weight: 700;
+}
+
+#message {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+
+/* FOOTER STYLES */
+.footer {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  background-color: #363636;
+  min-height: 400px;
+  width: 100%;
+}
+
+#copyright {
+  color: #d6dcdf;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 60px auto;
+}
